@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe List</title>
+    <style>
+        .recipe { margin-bottom: 10px; }
+        #pagination { margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div id="recipe-list">
+        <!-- Recipes will be dynamically injected here by JavaScript -->
+    </div>
+
+    <div id="pagination">
+        <!-- Pagination controls for infinite scrolling -->
+    </div>
+
+    <!-- Create Collection Form -->
+    <form id="create-collection-form">
+        <input type="text" id="collection-name" placeholder="Collection Name" required>
+        <button type="submit">Create Collection</button>
+    </form>
+
+    <!-- Add Recipe to Collection Form -->
+    <select id="collection-select">
+        <!-- Options populated dynamically -->
+    </select>
+    <button onclick="addRecipeToCollection(1)">Add to Collection</button> <!-- Replace 1 with actual recipe ID -->
+
+    <!-- Social Sharing Buttons -->
+    <div>
+        <a href="#" onclick="shareOnTwitter('http://example.com/recipe/1')">Share on Twitter</a>
+        <a href="#" onclick="shareOnFacebook('http://example.com/recipe/1')">Share on Facebook</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
